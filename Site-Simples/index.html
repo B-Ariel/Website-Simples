@@ -1,0 +1,43 @@
+<!--Tem o intuito de mostrar algumas funcionalidades, por isso que a aparência está "bem simples" (brega)
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Simples</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="light-theme">
+    <h1>Lista de tarefa</h1>
+    <p id="msg">Tarefas atuais:</p>
+    <ul>
+        <li class="list">Adicionar estilos visuais</li>
+        <li class="list">Adicionar temas claros e escuros</li>
+        <li>Habilitar a alternância de temas</li><br>
+        <li class="list">Adicionar suporte à três linguas</li>
+        <li>Habilitar a alternância de idiomas</li><br>
+        <li class="list">Adicionar suporte ao tamanho da letra</li>
+        <li>Habilitar a alternância do tamanho</li>
+    </ul>
+
+    <div>
+        <button class="btn">Escuro</button>
+    </div>
+
+    <select id="language-selector">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+    </select>
+
+    <div class="fontSize">
+        <button class="btnFont" onclick="alterarFonte(-1)">A-</button>
+        <button class="btnFont" onclick="alterarFonte(1)">A+</button>
+    </div>
+    
+    <script src="app.js"></script>
+    <noscript>Você precisa habilitar JavaScript para ver o site completo</noscript>
+</body>
+</html>
