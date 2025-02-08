@@ -1,6 +1,8 @@
 //Tem o intuito de mostrar algumas funcionalidades, por isso que a aparência está "bem simples" (brega)
 'use strict'
 
+alert("Tem o intuito de mostrar algumas funcionalidades, por isso que a aparência está \"bem simples\" (brega)");
+
 const switcher = document.querySelector('.btn');
 
 switcher.addEventListener('click', function() {
