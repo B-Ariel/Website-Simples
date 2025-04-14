@@ -1,0 +1,158 @@
+/*CSS da página: LinkTree
+*/
+.linktree * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, arial, helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+body.linktree {
+    background: linear-gradient(45deg, rgba(255,0,0,0.8), rgba(0,0,255,0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.linktree .container {
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0,0,0);
+    max-width: 400px;
+    width: 100%;
+}
+.linktree .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.linktree .profile h2 {
+    margin-bottom: 10px;
+    color: rgb(0,0,0);
+}
+.linktree .links a {
+    display: block;
+    background: rgb(0,150,255);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.linktree .links a:hover {
+    background: rgb(0,90,180);
+}
+.linktree footer {
+    color: rgb(0,0,0);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/*CSS da página: home e adjacentes (about e posts)
+*/
+body.home {
+    font-family: 'Times New Roman', Times, serif, arial, helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(100,100,100);
+}
+.home header {
+    background: rgb(50,50,50);
+    color: rgb(255,255,255);
+    padding: 20px;
+    text-align: center;
+}
+.home .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.home .post {
+    background: rgb(240,240,200);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+.home footer {
+    background: rgb(50,50,50);
+    color: rgb(255,255,255);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.home .links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home .links a{
+    background: rgb(120,120,120);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    border-radius: 5px;
+}
+.home .links a:hover {
+    background: rgb(200,200,200);
+    color: rgb(0,0,0);
+}
+.home .links-post{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+}
+.home .links-post a{
+    background: rgb(25,25,100);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    border-radius: 5px;
+}
+.home .links-post a:hover {
+    background: rgb(70,130,180);
+    color: rgb(255,255,255);
+}
+
+
+/* Formatação dos "LINKS NORMAIS"
+*/
+.home .links-normal a{
+    color: rgb(0,0,255);
+    text-decoration: none;
+}
+.home .links-normal a:hover{
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+
+/* Formatação dos "EXEMPLOS DE CÓDIGO"
+*/
+.home .code-example {
+    background: rgb(0,0,0);
+    color: rgb(0,255,0);
+    font-family: serif;
+    text-decoration: none;
+    font-size: auto;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0,0,0);
+}

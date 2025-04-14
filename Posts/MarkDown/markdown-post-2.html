@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breno - Guia de MarkDown - Parte 2</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../Images/icone-simbolo.jpg" type="image/jpg">
+</head>
+
+<body class="home">
+  <script></script>
+  <header>
+    <h1>Seja muito bem-vindo</h1>
+    <h3>Ao espaço onde guardo minhas anotações!😊</h3>
+    <div class="links">
+      <a href="../../index.html" target="_self">Página Inicial</a>
+      <a href="../../linktree.html" target="_self">LinkTree</a>
+      <a href="../../about.html" target="_self">Sobre</a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="post">
+      <h2>Guia de MarkDown - Parte 2</h2>
+      <div class="links-post">
+        <a href="markdown-post-1.html">Parte 1</a>
+        <a href="markdown-post-2.html">Parte 2</a>
+      </div>
+
+      <p>
+        Antes de seguir com este conteúdo, <b>recomendo a leitura do post anterior.</b>
+        Nele são abordados conceitos essenciais para iniciantes, já aqui, é abordado os recursos
+        essenciais para organização e comunicação. Se ainda não conferiu, vale a pena dar uma
+        olhada para aproveitar ao máximo este guia!
+      </p>
+      <p> Um <b>Guia de Markdown - INTERMEDIÁRIO</b> que fará você sobreviver no GitHub,
+        e que, nesta primeira parte, abordará estes temas:
+      </p>
+      <ul class="links-normal">
+        <li><b><a href="#tables">Tabelas:</a></b> Criação de tabelas, formatação e alinhamento de texto.</li> <br>
+        <li><b><a href="#collected-sections">Seções Recolhidas:</a></b> Ocultando seções.</li> <br>
+        <li><b><a href="#diagrams">Diagramas:</a></b> Criação de diagramas, mapas e de objetos 3d.</li> <br>
+        <li><b><a href="#mathematical-expressions">Expressões Matemáticas</a></b> Formato laTeX.</li> <br>
+      </ul>
+
+      <hr>
+      <h1 id="tables">Tabelas:</h1>
+      <h3>1. Criação de Tabelas:</h3>
+      <p>
+        <b>Utilize | (barras verticais / pipes) e - (hífens / traços) para estruturar tabelas.</b><br>
+        A linha de cabeçalho <b>deve ter no mínimo três hífens</b>.<br>
+        <b>E se quiser exibir uma | (barras verticais / pipes) dentro de uma célula, preceda-a com uma
+          barra invertida (\|).</b><br><br>
+        Exemplo:<br>
+      <div class="code-example">
+        <pre><code>
+| Cabeçalho 1 | Cabeçalho 2 |
+| ----------- | ----------- |
+| Célula 1    | Célula 2    |
+| Célula 3    | Célula 4    |</code>
+            </pre>
+      </div><br>
+      <div class="code-example">
+        <table border="1" cellpadding="5" cellspacing="5">
+          <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+          </tr>
+          <tr>
+            <td>Célula 1</td>
+            <td>Célula 2</td>
+          </tr>
+          <tr>
+            <td>Célula 3</td>
+            <td>Célula 4</td>
+          </tr>
+        </table>
+      </div>
+      </p><br><br><br>
+
+
+      <h3>2. Formatação:</h3>
+      <p>
+        <b>Dentro das tabelas, você pode usar links, blocos de código embutidos e estilos</b><br>
+        de texto, como negrito, itálico etc.<br><br>
+        Exemplo:<br>
+      <div class="code-example">
+        <pre><code>
+| Comandos do prompt de comando | Descrição |
+| --- | --- |
+| `cls` | *Limpa* a tela. |
+| `mkdir` | **Cria** uma Pasta. |
+| `color` | *Configura as cores.* |
+        </code></pre>
+      </div><br>
+      <div class="code-example">
+        <table border="1" cellpadding="5" cellspacing="5">
+          <tr>
+            <th>Comandos do prompt de comando</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>cls</td>
+            <td>Limpa a tela.</td>
+          </tr>
+          <tr>
+            <td>mkdir</td>
+            <td><b>Cria</b> uma Pasta.</td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>Configura as cores.</td>
+          </tr>
+        </table>
+      </div>
+      </p><br><br><br>
+
+
+      <h3>3. Alinhamento de Texto:</h3>
+      <p>
+        <b>Use essa sintaxe, que utiliza : (dois pontos) e - (hífens / traços) para alinhar texto
+          à esquerda (:---), ao centro (:---:) ou à direita (---:).</b><br><br>
+        Exemplo:<br>
+      <div class="code-example">
+        <pre><code>
+| Na Esquerda | No Centro | Na Direita   |
+| :---        |   :---:   |         ---: |
+| Nome:Red    | #FF0000   | rgb(255,0,0) |
+| Nome:Green  | #00FF00   | rgb(0,255,0) |
+| Nome:Blue   | #0000FF   | rgb(0,0,255) |
+            </code></pre>
+      </div><br>
+      <div class="code-example">
+        <table border="1" cellpadding="5" cellspacing="5">
+          <tr>
+            <th>Na Esquerda</th>
+            <th>No Centro</th>
+            <th>Na Direita</th>
+          </tr>
+          <tr>
+            <td>Nome:Red</td>
+            <td>#FF0000</td>
+            <td>rgb(255,0,0)</td>
+          </tr>
+          <tr>
+            <td>Nome:Green</td>
+            <td>#00FF00</td>
+            <td>rgb(0,255,0)</td>
+          </tr>
+          <tr>
+            <td>Nome:Blue</td>
+            <td>#0000FF</td>
+            <td>rgb(0,0,255)</td>
+          </tr>
+        </table>
+      </div>
+      </p><br><br><br>
+
+
+
+      <hr>
+      <h1 id="collected-sections">Seções Recolhidas:</h1>
+      <h3>1. Ocultando Seções:</h3>
+      <p>
+        <b>Use a tag &lt; details &gt; para criar seções recolhidas</b> que podem ser expandidas pelo leitor.<br><br>
+        E qualquer Markdown dentro de &lt; details &gt; será recolhido. Então <b>utilize &lt; summary &gt;
+          para definir o rótulo que será clicável.</b><br>
+        <b>Também é importante que adicione open à tag &lt; details &gt; para que a seção seja exibida
+          aberta por padrão.</b><br>
+        Exemplo:<br><br>
+      <div class="code-example">
+        <code>&lt;details open&gt;<br>
+        &lt;summary&gt; Dicas para seções recolhidas &lt;/summary&gt;<br><br>
+        ### Você pode adicionar cabeçalhos, códigos etc.<br><br>
+        ```Python<br>
+          print("Olá Mundo")<br>
+          ```<br>
+          &lt;/details&gt;</code>
+      </div><br>
+      <div class="code-example">
+        <details open>
+          <code><summary> Dicas para seções recolhidas </summary>
+            <h3>Você pode adicionar cabeçalhos, códigos etc.</h3>
+            print("Olá Mundo")</code>
+        </details>
+      </div><br>
+      <b>OBSERVE:<br>
+        Você pode adicionar texto dentro de uma seção recolhida.<br>
+        Você também pode adicionar uma imagem ou um bloco de código.</b>
+      </p><br><br><br>
+
+
+      <hr>
+      <h1 id="diagrams">Diagramas:</h1>
+      <h3>1. Criação de Diagramas:</h3>
+      <p>
+        <b>Crie diagramas com ferramentas como Mermaid e mapas interativos com GeoJSON ou TopoJSON
+          dentro de blocos de código delimitados.</b><br>
+        Exemplo:<br><br>
+        <b>Para criar um diagrama com Mermaid:</b><br>
+        <b>Em que ocorre a definição do início de um gráfico direcionado:</b><br><br>
+      <div class="code-example">
+        <code>```mermaid<br>
+        graph TD;<br>
+        A-->B;<br>
+        A-->C;<br>
+        B-->D;<br>
+        C-->D;<br>
+        ```</code>
+      </div><br>
+
+      <!-- Incluindo a biblioteca Mermaid -->
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">
+        <!--
+    //Inicializando Mermaid após o carregamento da página:
+    mermaid.initialize({
+        startOnLoad: true
+    });
+       -->
+      </script>
+      <pre class="mermaid">
+graph TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
+  </pre>
+      </p><br><br><br>
+
+
+      <h3>2. Criação de Mapas:</h3>
+      <p>
+        <b>Você pode usar a sintaxe GeoJSON ou TopoJSON para criar mapas interativos.</b><br>
+        Para criar um mapa, adicione o GeoJSON ou TopoJSON dentro de um bloco de código
+        delimitado com o identificador de sintaxe geojson ou topojson.<br>
+        Exemplo:<br><br>
+        Aqui um quadrado sobre a cidade do Rio de Janeiro em GeoJSON:
+      <div class="code-example">
+      <pre><code>```geojson
+{
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+    [
+        [-43.2029, -22.925],
+        [-43.1429, -22.925],
+        [-43.1429, -22.875],
+        [-43.2029, -22.875],
+        [-43.2029, -22.925]
+            ]
+        ]
+    }
+}
+```</code></pre>
+</div><br><br><br>
+
+
+      <h3>3. Criação de Objetos 3D:</h3>
+      <p>
+        <b>Você pode usar também a sintaxe ASCII STL diretamente no markdown para criar
+          modelos 3D interativos.</b><br>
+        Para exibir um modelo, adicione a sintaxe ASCII STL
+        dentro de um bloco de código cercado com o identificador de sintaxe stl.<br><br>
+        Exemplo:<br><br>
+        Aqui um modelo 3D de uma pirâmide em STL:
+<div class="code-example">
+      <pre><code>```stl
+solid pyramid
+  facet normal 0.0 0.0 1.0
+    outer loop
+      vertex 0.0 0.0 1.0
+      vertex -1.0 -1.0 0.0
+      vertex 1.0 -1.0 0.0
+    endloop
+  endfacet
+  facet normal 1.0 1.0 1.0
+    outer loop
+      vertex 0.0 0.0 1.0
+      vertex 1.0 -1.0 0.0
+      vertex 1.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 1.0 1.0
+    outer loop
+      vertex 0.0 0.0 1.0
+      vertex 1.0 1.0 0.0
+      vertex -1.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 -1.0 1.0
+    outer loop
+      vertex 0.0 0.0 1.0
+      vertex -1.0 1.0 0.0
+      vertex -1.0 -1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex -1.0 -1.0 0.0
+      vertex 1.0 -1.0 0.0
+      vertex 1.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.0 1.0 0.0
+    outer loop
+      vertex 1.0 1.0 0.0
+      vertex -1.0 1.0 0.0
+      vertex -1.0 -1.0 0.0
+    endloop
+  endfacet
+endsolid pyramid
+```</code></pre>
+</div>
+      </p><br><br><br>
+
+
+      <hr>
+      <h1 id="mathematical-expressions">Expressões Matemáticas:</h1>
+      <h3>1. Formato LaTeX:</h3>
+      <p>
+        <b>O GitHub suporta expressões matemáticas formatadas em LaTeX usando o MathJax.</b>
+        <b>Para usar uma expressão matemática junto com um texto, você tem que
+          usar o símbolo do $ (cifrão) ou iniciar a expressão com $` (cifrões acompanhados com acentos
+          graves) e encerrá-la com `$.</b><br>
+          Exemplo:<br><br>
+          <div class="code-example">
+          <code>O logaritmo de 32 na base 2 (log<sub>2</sub> 32 = 5):<br><br>
+          $\log_2 32 = 5$<br><br><br>
+        A divisão de 5 por 1/2 (5 ÷ 1/2 = 5 x 2 = 10):<br><br>
+        $` 5 \div \frac{1}{2} = 5 \times 2 = 10 `$</code>
+      </div><br>
+
+        <b>Ou se quiser, pode adicionar a expressão matemática como um bloco, para isso,
+          apenas inicie uma nova linha e delimite a expressão com dois símbolos de $$ (cifrões).</b><br>
+        Exemplo:<br><br>
+        <div class="code-example">
+        <code>O resto de 10 dividido por 3 (10 mod 3 = 1):<br><br>
+        $$10 \mod 3 = 1$$</code>
+      </div><br>
+
+        <b>Também é possível usar a sintaxe do bloco de código (três acentos graves, no início e fim) com o math para exibir uma
+          expressão matemática como um bloco.</b><br>
+        Exemplo:<br><br>
+        <div class="code-example">
+        <code>A multiplicação de 6 por 8 (6 x 8 = 48):<br><br>
+        ```math<br><br>
+        6 \cdot 8 = 48<br><br>
+        ```</code>
+      </div><br><br>
+        <b>OBSERVE:<br>
+        Escape do sinal:<br>
+        Para exibir um $ cifrão literal, use \ (barra invertida)antes do $ (cifrão).<br>
+         Ou coloque o $ (cifrão) entre a tag html span.</b><br>
+        Exemplo:<br><br>
+        <div class="code-example">
+        <code>Aqui o cifrão é exibido como um texto qualquer!<br><br>
+        &lt;span&gt; $ &lt;/span&gt; \log_2 32 = 5$</code>
+      </div>
+      </p><br><br><br>
+
+      <hr>
+      <p><b>EM CASOS DE DÚVIDA, SEMPRE BUSCAR A DOCUEMNTAÇÃO OFICIAL NO GITHUB!</b></p>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright (©) 2025 Breno Ariel</p>
+  </footer>
+</body>
+
+</html>
