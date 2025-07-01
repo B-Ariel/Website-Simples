@@ -3,4 +3,4 @@
 
 <br>
 
-### Nome do projeto original da Fundação Bradesco: [Crie um site simples usando HTML, CSS e JavaScript](https://www.ev.org.br/cursos/crie-um-site-simples-usando-html-css-e-javascript)
+### Nome do projeto original: [Crie um site simples usando HTML, CSS e JavaScript](https://www.ev.org.br/cursos/crie-um-site-simples-usando-html-css-e-javascript)
