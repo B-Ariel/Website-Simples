@@ -1,4 +1,4 @@
-# Esse projeto foi feito com inspiração num outro projeto na:
+# Esse website foi feito com inspiração em um projeto da:
 ### [Fundação Bradesco | Escola Virtual](https://www.ev.org.br/)
 
 <br>
